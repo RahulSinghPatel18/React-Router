@@ -8,17 +8,15 @@ import Library from "../src/Components/Library";
 
 function App() {
   return (
-    <div className='w-screen h-screen' >
+    <div className='w-screen h-screen  bg-sky-100' >
       <Nav/>
-      <Routes >
+      <Routes>
         <Route path="/"  element={<Home/>}  />
         <Route path="/create" element={<Entry/>} />
         <Route path="/show" element={<Library/>} />
         
       </Routes>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+     
     </div>
   );
 }

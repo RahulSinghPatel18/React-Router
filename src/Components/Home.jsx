@@ -2,8 +2,8 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>
-      <h1>home</h1>
+    <div className='px-6 py-2 bg-green-300 rounded  border inline-block'>
+      <h1>Home</h1>
     </div>
   )
 }

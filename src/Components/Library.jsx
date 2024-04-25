@@ -2,7 +2,7 @@ import React from 'react'
 
 const Library = () => {
   return (
-    <div>
+    <div className='px-6 py-2 bg-green-300 rounded  border inline-block'>
       <h1>Library</h1>
     </div>
   )

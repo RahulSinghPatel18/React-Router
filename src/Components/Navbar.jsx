@@ -1,16 +1,34 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {NavLink, Link } from 'react-router-dom'
 // import Nav from "../src/Components/Navbar";
 
 const Navbar = () => {
   return (
+
+    <nav className='w-full flex justify-center p-5 bg-blue-200 gap-[8%]'>
+      <NavLink className= {(e)  => (e.isActive ?  "text-red-300" : "" )}
+      to="/"
+      >
+    Home
+      </NavLink>
+      <NavLink className= {(e) => (e.isActive ?  "text-red-300" : "" )}
+        
+       to="/Create"
+      >
+    Book Entry
+      </NavLink>
+      <NavLink className= {(e)  => (e.isActive ?  "text-red-300" : "" )}
+    
+       to="/show"
+      >
+    Library
+      </NavLink>
+ 
+ 
+
+
+  </nav>
   
-      <nav className='w-full flex justify-center  gap-5'>
-        <Link to="/">Home</Link>
-        <Link to="/create">Book Entry</Link>
-        <Link to="/show">Library</Link>
-      </nav>
-      
   )
 }
 
