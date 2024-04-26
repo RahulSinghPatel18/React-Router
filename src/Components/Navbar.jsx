@@ -6,25 +6,22 @@ const Navbar = () => {
   return (
 
     <nav className='w-full flex justify-center p-5 bg-blue-200 gap-[8%]'>
-      <NavLink className= {(e)  => (e.isActive ?  "text-red-300" : "" )}
-      to="/"
-      >
-    Home
-      </NavLink>
-      <NavLink className= {(e) => (e.isActive ?  "text-red-300" : "" )}
-        
-       to="/Create"
-      >
-    Book Entry
-      </NavLink>
-      <NavLink className= {(e)  => (e.isActive ?  "text-red-300" : "" )}
-    
-       to="/show"
-      >
-    Library
-      </NavLink>
+      <NavLink className={(e) => (e.isActive ? "text-red-400" : "")}
+     to="/"> Home
+
+     </NavLink>
  
+     <NavLink className={(e) => (e.isActive ? "text-red-400" : "")}
+     to="/Create"> Book Entry
+
+     </NavLink>
  
+     <NavLink className={(e) => (e.isActive ? "text-red-400" : "")}
+     to="/show"> Library
+
+     </NavLink>
+ 
+
 
 
   </nav>
